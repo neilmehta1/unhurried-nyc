@@ -14,7 +14,7 @@
     }
     body {
       max-width: 650px;
-      line-height: 1.2;
+      line-height: 1.4;
       font-size: 14px;
       margin: 0 auto;
       font-family: Arial, Helvetica, sans-serif;
@@ -26,12 +26,18 @@
       hyphens: auto;
       text-align: justify;
     }
+    li {
+      margin-left: 10px;
+      white-space: normal;
+    }
+    li::marker {
+      list-style-position: outside;
+    }
     p {
       margin-top: 0.5em;
       margin-bottom: 0.5em;
     }
-    h4 {
-      margin-bottom: 0;
+    ::marker {
     }
   </style>
   <body>
@@ -48,20 +54,23 @@
         For this inaugural run, we will be meeting at
         <strong>Bowling Green Park at 10am</strong>
         next to the fountain. We will run along the hudson river park and end at
-        Pier 57 for coffee and snacks.
+        pier 57 for coffee and snacks.
       </p>
       <p>
         (I am still deciding where subsequent club meetups should be. I chose
         the battery because our attendees live in places that range from hell's
         kitchen to williamsburg to park slope. I may start rotating the start
-        spots between neighborhoods. Your feedback on meetup location is appreciated)
+        spots between neighborhoods. Your feedback on meetup location is
+        appreciated)
       </p>
       <h4>Rules and Guidelines</h4>
-      <li>
-        The runs are all-weather, so please dress appropriately. A run will be
-        cancelled in the following conditions: smoke, blizzards, hurricanes, and
-        acts of god.
-      </li>
+      <ul class="outside">
+        <li>
+          The runs are all-weather, so please dress appropriately. A run will be
+          cancelled in the following conditions: smoke, blizzards, hurricanes,
+          and acts of god.
+        </li>
+      </ul>
       <p>--</p>
       <p>Yours Truly,</p>
       <p>Neil</p>
